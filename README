@@ -1,0 +1,16 @@
+These are quick attempts at writing weight-training plans to help with rowing.
+
+I am using the Liftosaur app, which uses a custom language called Liftoscript for writing
+plan and progression schemes:
+https://github.com/astashov/liftosaur
+
+I don't know what I'm doing -- don't follow these plans.
+
+Three plans are provided:
+1. A plan for a weight-loss phase: "cut"
+2. A plan for a small calorie surplus to improve rowing strength: "bulk"
+3. A plan for serious rowing, where you prioritize water time and de-emphasize weights:
+   "maintenance"
+
+These plans are full-body routines, three days per week, with an emphasis on legs and back
+to move the boat as fast as possible.

@@ -1,0 +1,70 @@
+# Week 1
+## Sunday - Volume
+
+generic_barbell / used: none / 2x6 / 80% / progress: custom(increment: 2lb) {~
+  if (completedReps >= reps) {
+    rm1 += state.increment
+  }
+~}
+
+heavy_barbell_lower / used: none / ...generic_barbell
+heavy_barbell_upper / used: none / ...generic_barbell / 80%
+volume_barbell_lower / used: none / ...generic_barbell / 2x8 / 72%
+volume_barbell_upper / used: none / ...generic_barbell / 2x8 / 70%
+recovery_barbell_lower / used: none / ...generic_barbell / 2x5 / 65% / progress: none
+recovery_barbell_upper / used: none / ...generic_barbell / 2x8 / 65% / progress: none
+
+generic_dumbbell / used: none / 2x8 / 78% / progress: custom(increment: 3.75lb, successes: 0) {~
+  if (completedReps >= reps) {
+    state.successes += 1
+
+    if (state.successes >= 2) {
+      rm1 += state.increment
+      state.successes = 0
+    }
+  } else {
+    state.successes = 0
+  }
+~}
+
+heavy_dumbbell_lower / used: none / ...generic_dumbbell
+heavy_dumbbell_upper / used: none / ...generic_dumbbell / 75%
+volume_dumbbell_lower / used: none / ...generic_dumbbell / 2x10 / 72%
+volume_dumbbell_upper / used: none / ...generic_dumbbell / 2x10 / 70%
+recovery_dumbbell_lower / used: none / ...generic_dumbbell / 2x8 / 65% / progress: none
+recovery_dumbbell_upper / used: none / ...generic_dumbbell / 2x8 / 65% / progress: none
+
+generic_machine / used: none / 2x8 / 82% / progress: custom(increment: 2lb) {~
+  if (completedReps >= reps) {
+    rm1 += state.increment
+  }
+~}
+
+heavy_machine_lower / used: none / ...generic_machine
+heavy_machine_upper / used: none / ...generic_machine / 76%
+volume_machine_lower / used: none / ...generic_machine / 2x12 / 68%
+volume_machine_upper / used: none / ...generic_machine / 2x10 / 72%
+recovery_machine_lower / used: none / ...generic_machine / 2x10 / 65% / progress: none
+recovery_machine_upper / used: none / ...generic_machine / 2x10 / 65% / progress: none
+
+tinker_machine / used: none / 2x12-15 / progress: dp(1lb, 12, 15)
+
+tinker_dumbbell / used: none / 2x12-15 / progress: dp(2.5lb, 12, 15)
+
+Squat / ...volume_barbell_lower
+Seated Wide Grip Row / ...volume_machine_upper / progress: none
+Incline Bench Press / ...volume_dumbbell_upper
+Cable Crunch / ...tinker_machine
+Incline Curl / ...tinker_dumbbell
+
+## Tuesday - Recovery
+Squat / ...recovery_barbell_lower
+Leg Curl / ...volume_machine_lower
+Triceps Pushdown / ...tinker_machine
+
+## Thursday - Heavy
+Deadlift / ...heavy_barbell_lower
+Bench Press / ...heavy_barbell_upper
+Lat Pulldown / ...heavy_machine_upper
+Leg Extension / ...volume_machine_lower
+Seated Wide Grip Row / ...heavy_machine_upper
