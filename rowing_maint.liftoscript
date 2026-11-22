@@ -1,0 +1,43 @@
+# Week 1
+## Day A
+
+generic_barbell / used: none / 2x4 / 84% / progress: none
+
+heavy_barbell_lower / used: none / ...generic_barbell
+heavy_barbell_upper / used: none / ...generic_barbell / 2x5 / 80%
+volume_barbell_lower / used: none / ...generic_barbell / 2x6 / 74%
+volume_barbell_upper / used: none / ...generic_barbell / 2x6 / 72%
+recovery_barbell_lower / used: none / ...generic_barbell / 2x4 / 65%
+recovery_barbell_upper / used: none / ...generic_barbell / 2x5 / 65%
+
+generic_dumbell / used: none / 2x6 / 80% / progress: none
+
+heavy_dumbbell_lower / used: none / ...generic_dumbell
+heavy_dumbbell_upper / used: none / ...generic_dumbell / 78%
+volume_dumbbell_lower / used: none / ...generic_dumbell / 2x8 / 72%
+volume_dumbbell_upper / used: none / ...generic_dumbell / 2x8 / 70%
+recovery_dumbbell_lower / used: none / ...generic_dumbell / 2x6 / 65%
+recovery_dumbbell_upper / used: none / ...generic_dumbell / 2x6 / 65%
+
+generic_machine / used: none / 2x8 / 78% / progress: none
+
+heavy_machine_lower / used: none / ...generic_machine
+heavy_machine_upper / used: none / ...generic_machine / 75%
+volume_machine_lower / used: none / ...generic_machine / 2x10 / 70%
+volume_machine_upper / used: none / ...generic_machine / 2x10 / 68%
+recovery_machine_lower / used: none / ...generic_machine / 2x8 / 65%
+recovery_machine_upper / used: none / ...generic_machine / 2x8 / 65%
+
+tinker_machine / used: none / 2x12 / 65% / progress: none
+tinker_dumbbell / used: none / 2x12 / 65% / progress: none
+
+Squat / ...heavy_barbell_lower
+Bench Press / ...heavy_barbell_upper
+Seated Wide Grip Row / ...heavy_machine_upper
+Cable Crunch / ...tinker_machine
+
+## Day B
+Deadlift / ...heavy_barbell_lower
+Chest-Supported Row / ...heavy_barbell_upper
+Incline Bench Press / ...heavy_dumbbell_upper
+Lat Pulldown / ...heavy_machine_upper
